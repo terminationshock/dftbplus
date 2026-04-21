@@ -6730,7 +6730,7 @@ contains
         iDm = densityMatrixTypes%fromEigenVecs
       end if
     end if
-    call  TDensityMatrix_init(densityMatrix, iDm)
+    call TDensityMatrix_init(densityMatrix, iDm, elpa=electronicSolver%elpa)
 
   end subroutine densityMatrixSource
 

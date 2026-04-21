@@ -39,6 +39,7 @@
 #:set EMULATE_F08_MATH = defined('EMULATE_F08_MATH')
 #:set INSTANCE_SAFE_BUILD = defined('INSTANCE_SAFE_BUILD')
 #:set ELPA_HAS_SETUP_GPU = defined('ELPA_HAS_SETUP_GPU')
+#:set ELPA_HAS_PXGEMM = defined('ELPA_HAS_PXGEMM')
 
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

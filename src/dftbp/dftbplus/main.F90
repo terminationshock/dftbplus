@@ -6154,7 +6154,7 @@ contains
     real(dp), intent(out) :: ERhoPrim(:)
 
     !> Holds density generation settings and real-space delta density matrix
-    type(TDensityMatrix), intent(in) :: densityMatrix
+    type(TDensityMatrix), intent(inout) :: densityMatrix
 
     !> Storage eigenvectors (real case)
     real(dp), intent(inout), allocatable :: eigvecsReal(:,:,:)
@@ -6295,7 +6295,7 @@ contains
     real(dp), intent(in) :: coord(:,:)
 
     !> Holds density generation settings and real-space delta density matrix
-    type(TDensityMatrix), intent(in) :: densityMatrix
+    type(TDensityMatrix), intent(inout) :: densityMatrix
 
     !> Energy weighted sparse matrix
     real(dp), intent(out) :: ERhoPrim(:)
@@ -6398,7 +6398,7 @@ contains
     real(dp), intent(out) :: work(:,:)
 
     !> Holds real and complex delta density matrices and pointers
-    type(TDensityMatrix), intent(in) :: densityMatrix
+    type(TDensityMatrix), intent(inout) :: densityMatrix
 
     !> Energy weighted density matrix
     real(dp), intent(out) :: ERhoPrim(:)
@@ -6632,7 +6632,7 @@ contains
     complex(dp), intent(inout) :: work(:,:)
 
     !> Holds real and complex delta density matrices and pointers
-    type(TDensityMatrix), intent(in) :: densityMatrix
+    type(TDensityMatrix), intent(inout) :: densityMatrix
 
     !> Energy weighted sparse density matrix (charge only part)
     real(dp), intent(out) :: ERhoPrim(:)
