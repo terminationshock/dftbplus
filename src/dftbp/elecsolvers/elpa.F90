@@ -575,7 +575,8 @@ contains
         allocate(this%matrix${NAME}$2(this%matrixLocalRows, this%matrixLocalColumns))
       end if
       if (.not. allocated(this%eigenvectors${NAME}$)) then
-        allocate(this%eigenvectors${NAME}$(this%matrixLocalRows, this%matrixLocalColumns))
+        allocate(this%eigenvectors${NAME}$(this%matrixLocalRows, this%matrixLocalColumns),&
+            & source=${ZERO}$)
       end if
 
       if (this%joinElpaCalls) then
